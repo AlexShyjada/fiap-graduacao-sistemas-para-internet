@@ -1,0 +1,48 @@
+#Footer {
+  display: flex;
+  justify-content: center;
+  background: var(--base4);
+}
+
+#Footer div.container {
+  padding: 40px 0;
+}
+
+#Footer div.container div.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 400px;
+}
+
+#Footer div.container div.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 400px;
+}
+
+#Footer div.container div.contentContainer span.companyName,
+#Footer div.container div.contentContainer span.copy {
+  line-height: 24px;
+  color: var(--base7);
+}
+
+#Footer div.container div.contentContainer p.companyDescription {
+  color: var(--base7);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#Footer div.container div.contentContainer span.lgpd {
+  color: var(--base7);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#Footer div.container div.contentContainer span.lgpd a{
+  color: var(--base7);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: underline;
+}

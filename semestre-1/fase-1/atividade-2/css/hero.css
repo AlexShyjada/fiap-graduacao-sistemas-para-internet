@@ -1,0 +1,103 @@
+#Hero {
+  padding: 64px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#Hero div.container {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../assets/backgrounds/Hero/1920.svg");
+  background-repeat: no-repeat, repeat;
+}
+
+#Hero div.container aside.textContainer {
+  max-width: 588px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+#Hero div.container aside.textContainer h1.mainTitle strong {
+  background-image: var(--degradePrimary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#Hero div.container aside.textContainer p.description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--base5);
+}
+
+#Hero div.container aside.textContainer div.buttonContainer {
+  display: flex;
+  gap: 16px;
+}
+
+#Hero div.container aside.textContainer div.buttonContainer .button {
+  width: 160px;
+}
+
+#Hero div.container figure.imageContainer {
+  min-width: 497px;
+  min-height: 429px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: 5px solid #000000;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75.52%, rgba(0, 0, 0, 0.8) 100%), url("../assets/backgrounds/Hero/figure-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Hero div.container figure.imageContainer {
+  padding: 12px;
+  min-width: 497px;
+  min-height: 429px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: 5px solid #000000;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75.52%, rgba(0, 0, 0, 0.8) 100%), url("../assets/backgrounds/Hero/figure-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Hero div.container figure.imageContainer div.stepIndicator {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+#Hero div.container figure.imageContainer div.stepIndicator span.numberIndicator {
+  color: var(--base1);
+}
+
+#Hero div.container figure.imageContainer div.stepIndicator div.visualIndicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+}
+
+#Hero div.container figure.imageContainer div.stepIndicator div.visualIndicator span.indicator {
+  width: 100%;
+  height: 2px;
+  background: var(--base1);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#Hero div.container figure.imageContainer div.stepIndicator div.visualIndicator span.indicator.active {
+  opacity: 1;
+}
