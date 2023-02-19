@@ -1,0 +1,33 @@
+:root {
+  --degradePrimary: linear-gradient(270deg, #FF2024 0%, #FF650F 100%);
+  --degradeHover: linear-gradient(270deg, #FF5C5F 0%, #FF8642 100%);
+  --green: #008F66;
+  --greenHover: #00B884;
+  --yellow: #F5C124;
+  --yellowHover: #F5DF70;
+  --red: #DB0618;
+  --redredHover: #E54C4C;
+  --base7: #000000;
+  --base6: #2D2D2D;
+  --base5: #505050;
+  --base4: #DEDCD3;
+  --base3: #F2F0E9;
+  --base2: #FAF9F6;
+  --base1: #FFFFFF;
+}
+
+* {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-radius: none;
+  background-color: var(--base2);
+}
+
+.container {
+  width: 1201px;
+}
