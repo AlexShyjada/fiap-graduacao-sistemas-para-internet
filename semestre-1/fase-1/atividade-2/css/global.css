@@ -25,9 +25,68 @@
   background: transparent;
   border: none;
   border-radius: none;
+}
+body {
   background-color: var(--base2);
 }
 
 .container {
   width: 1201px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  color: var(--base7);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  color: var(--base6);
+}
+
+.button.sm {
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 16px;
+}
+
+.button.mg {
+  height: 56px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 24px;
+}
+
+.button.lg {
+  height: 72px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 36px;
+}
+
+.button.buttonStroke {
+  background: var(--base2);
+  border: solid 2px var(--base7);
+}
+
+.button.buttonStroke:hover {
+  background: var(--base4);
+}
+
+.button.buttonFill {
+  color: var(--base1);
+  background: var(--base7);
+}
+
+.button.buttonFill:hover {
+  background: var(--base5);
 }

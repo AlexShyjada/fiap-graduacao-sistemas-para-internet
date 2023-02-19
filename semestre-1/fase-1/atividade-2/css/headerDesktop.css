@@ -65,31 +65,3 @@
   display: flex;
   gap: 12px;
 }
-
-#Header div.container div.buttonContainer a.button{
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-
-  padding: 12px 16px;
-  border: solid 2px var(--base7);
-  transition: .3s;
-}
-
-#Header div.container div.buttonContainer a.strokeBtn{
-  color: var(--base7);
-}
-
-#Header div.container div.buttonContainer a.strokeBtn:hover{
-  background: var(--base4);
-}
-
-#Header div.container div.buttonContainer a.fillBtn{
-  color: var(--base1);
-  background: var(--base7);
-}
-
-#Header div.container div.buttonContainer a.fillBtn:hover{
-  border: solid 2px var(--base5);
-  background: var(--base5);
-}
