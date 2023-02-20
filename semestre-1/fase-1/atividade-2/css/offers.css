@@ -1,0 +1,121 @@
+#Offers {
+  display: flex;
+  justify-content: center;
+}
+
+#Offers div.container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 60px 0;
+  background-image: url(../assets/backgrounds/Offers/1920.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#Offers div.container header.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#Offers div.container header.titleContainer div.textContainer {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#Offers div.container header.titleContainer .button {
+  margin-bottom: 8px;
+}
+
+#Offers div.container header.titleContainer div.textContainer span.subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#Offers div.container header.titleContainer div.textContainer h2.secundaryTitle {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+#Offers div.container header.titleContainer div.textContainer h2.secundaryTitle strong.userPosition {
+  background: linear-gradient(270deg, #FF2024 0%, #FF650F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#Offers div.container div.gridOffers {
+  display: grid;
+  row-gap: 12px;
+  grid-template-columns: 300px 300px 300px 300px;
+}
+
+#Offers div.container div.gridOffers a.card {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--base1);
+  border-left: solid 1px var(--base4);
+  transition: .3s;
+}
+
+#Offers div.container div.gridOffers a.card:hover {
+  background: var(--base4);
+}
+
+#Offers div.container div.gridOffers a.card div.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#Offers div.container div.gridOffers a.card div.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+#Offers div.container div.gridOffers a.card div.textContainer span.subtitle {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--base7);
+}
+
+#Offers div.container div.gridOffers a.card div.textContainer h3.tertiaryTitle {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--base7);
+}
+
+#Offers div.container div.gridOffers a.card div.priceContainer {
+  display: flex;
+}
+
+#Offers div.container div.gridOffers a.card div.priceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#Offers div.container div.gridOffers a.card div.priceInfo span.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--base7);
+}
+
+#Offers div.container div.gridOffers a.card div.priceInfo span.small {
+  font-size: 14px;
+  color: var(--base7);
+}
