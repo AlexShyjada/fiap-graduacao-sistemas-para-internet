@@ -56,12 +56,13 @@
   transition: .3s;
 }
 
+#Header div.container ul.links li.link.active a,
 #Header div.container ul.links li.link:hover {
   border-radius: 4px;
-  background: var(--base4);
+  background: rgba(200, 200, 200, 0.3);
 }
 
-#Header div.container div.buttonContainer{
+#Header div.container div.buttonContainer {
   display: flex;
   gap: 12px;
 }
