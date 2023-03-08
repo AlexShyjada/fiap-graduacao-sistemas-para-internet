@@ -1,0 +1,93 @@
+#DestinationChoice {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#DestinationChoiceForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form.container {
+  background-image: url("../assets/backgrounds/DestinationChoiceForm/1920.png");
+  background-repeat: no-repeat, repeat;
+}
+
+fieldset.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+fieldset.form legend.formLegend {
+  display: table;
+  background: none;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--base7);
+}
+
+fieldset.form div.gridInputs {
+  display: grid;
+    grid-template-columns: repeat(4, 300px);
+  border: solid 1px var(--base4);
+}
+
+fieldset.form label {
+  display: flex;
+  flex-direction: column;
+  background: var(--base3);
+  border-right: solid 1px var(--base4);
+  padding: 12px 0 0 0;
+
+}
+
+fieldset.form:last-child {
+  border: none;
+}
+
+fieldset.form label span.inputLabel {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 0 0 12px;
+}
+
+fieldset.form label select,
+fieldset.form label input {
+  border: none;
+  box-shadow: none;
+  appearance: none;
+  height: 40px;
+  padding: 0 12px 0 12px;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--base5);
+}
+
+fieldset.form label select:focus,
+fieldset.form label input:focus {
+  outline: transparent;
+}
+
+fieldset.form footer.formFooter{
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset.form footer.formFooter button.addDiscount{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
