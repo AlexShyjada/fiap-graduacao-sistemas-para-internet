@@ -73,12 +73,11 @@ const offers = [
   },
 ];
 
-const ofertasDomManipulation = {
-  gridOffersPositionOnDom: document.querySelector("#GridOffers"),
+function renderOffers(offers) {
+  const gridOffersPositionOnDom = document.querySelector("#GridOffers");
 
-  offersRender: offers
-    .map((offer) => {
-      return `
+  const offersHtml = offers
+    .map((offer) => `
       <a href="${offer.slug}" target="_blank" class="card">
         <img src="${offer.imgURL}" alt="Foto de ${offer.title}" />
 
@@ -93,10 +92,10 @@ const ofertasDomManipulation = {
           <span class="small">Hospedagem inclusa · Voo direto</span>
         </div>
       </a>
-    `;
-    })
-    .join(" "),
-};
+    `)
+    .join("");
 
-ofertasDomManipulation.gridOffersPositionOnDom.innerHTML =
-  ofertasDomManipulation.offersRender;
+  gridOffersPositionOnDom.innerHTML = offersHtml;
+}
+
+renderOffers(offers);
