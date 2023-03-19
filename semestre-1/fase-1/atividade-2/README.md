@@ -6,7 +6,7 @@
 
 ## Preview
 
-<p align="center"> <img src="/assets/preview.png" alt="preview"></p>
+<p align="center"> <img src="./assets/preview.png" alt="preview"></p>
 
 ---
 
