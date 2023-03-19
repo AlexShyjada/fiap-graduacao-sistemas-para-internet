@@ -2,11 +2,11 @@
 
 ## Sobre o Projeto
 
-Esse projeto se trata da cronstrução do layout inicial do projeto Gulliver Traveler.
+Esse projeto se trata da construção do layout inicial do projeto Gulliver Traveler.
 
 Ainda não possuimos muitos detelhes a respeito desse projeto, mas o que se sebe é que é um projeto que será desenvolvido por completo ao longo do ano de 2023 e que sairemos com um produto digital inteirinho, pronto para ser adicionado ao nosso portifólio.
 
-Esse projeto tem como temática princial o contexto de viagens, então fiz uma página inicial sem responsividade para o que seria uma plataforma de venda de pacotes de viagens
+Esse projeto tem como temática princial o contexto de viagens, então fiz uma página inicial sem responsividade para o que seria uma plataforma de venda de pacotes de viagens.
 
 
 ## Preview
