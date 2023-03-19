@@ -13,8 +13,6 @@ Esse projeto tem como temática princial o contexto de viagens, então fiz uma p
 
 <p align="center"> <img src="./assets/preview.png" alt="preview"></p>
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FiUb0dIL7SBYZRQI9BL2KV7%2FFase-01---Atividade-02%3Fnode-id%3D150%253A749%26t%3DbrjlhNzVbZNIfzCI-1" allowfullscreen></iframe>
-
 ---
 
 ## Tecnologias
