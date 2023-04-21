@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container > * {
+    margin-bottom: 20px;
+}
+
+/* CONTAINER HEADER ------------------- */
+
+.header {
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.title p {
+    font-size: 18px;
+    color:#00B884;
+}
+
+.header_menu { 
+    font-size: 16px;
+    display:flex;
+    list-style: none;
+}
+
+.header_menu li {
+    margin: 0 5px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.header_menu a {
+    color: #000;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.header_menu li.active { 
+    border-color: #000;
+}
+
+/* CARDS ------------------------- */
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 320px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.card-1 {background-image: url('./images/sao_paulo.png');}
+.card-2 {background-image: url('./images/rio.png');}
+.card-3 {background-image: url('./images/salvador.png');}
+.card-4 {background-image: url('./images/maceio.png');}
+.card-5 {background-image: url('./images/sao_luiz.png');}
+
+.card a {
+    color: #FFF;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card_disp {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    font-size: 12px;
+    background: #E54C4C;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card_disp.active {
+    background: #00B884;
+}
+
+.card_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
+.data-left {text-align: left;}
+.data-right {text-align: right;}
+
+.card_data_span {
+    font-size: 12px;
+    color: #4CFFCD;
+    font-style: italic;
+}
+
+.card_data_info {
+    font-size: 14px;
+}
