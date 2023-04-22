@@ -11,13 +11,14 @@ html {
 }
 .container {
     width:70%;
-    margin:0 auto;
+    margin: 30px auto;
 }
 .header {
     width:100%;
     display: flex ;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 30px 0;
 }
 .title p {
     font-size: 18px;
@@ -41,7 +42,7 @@ html {
     text-decoration: none;
     display: block;
 }
-.active { 
+.header_menu .active { 
     border: 2px solid #000;
     border-radius: 8px;
 }
@@ -55,6 +56,8 @@ html {
     width:322px;
     height:500px;
     position:relative;
+    border-radius: 12px;
+    overflow:hidden;
 }
 .box a {
     width: 100%;
@@ -74,9 +77,10 @@ html {
    left:24px;
    border-radius: 4px;
    background-color: #e54c4c;
+   padding: 5px;
    
 }
-.active { 
+.box .active { 
     background-color: #00B884
 }
 .box_data { 
@@ -91,6 +95,7 @@ html {
     align-items: center;
     /* ainhamento vertical */  
     backdrop-filter: blur(10px);
+    padding: 10px;
 }
 .box_left{
     text-align: left;
