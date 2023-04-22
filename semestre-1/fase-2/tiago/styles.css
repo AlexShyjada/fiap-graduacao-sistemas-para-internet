@@ -27,6 +27,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .title p {
@@ -61,9 +62,10 @@ html {
 
 .grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .card {
@@ -128,4 +130,35 @@ html {
 
 .card_data_info {
     font-size: 14px;
+}
+
+@media (max-width: 1380px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 780px) {
+    .header {
+        display: block;
+    }
+
+    .header_menu {
+        margin: 10px 0;
+    }
+
+    .card {
+        height: 400px;
+    }
+}
+
+@media (max-width: 520px) {
+    .card {
+        width: 100%;
+    }
+
+    .header_menu {
+        display: none;
+    }
 }
