@@ -46,7 +46,7 @@ nav .transbox {
 .hero {    
     width: 100%;
     height: 100vh;
-    background-image: radial-gradient(rgba(25, 39, 40, 0), rgba(25, 39, 40, 0.8)), url(./imgs/sp.jpg);
+    background-image: radial-gradient(rgba(25, 39, 40, 0), rgba(25, 39, 40, 0.8)), url(./imgs/sp.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
