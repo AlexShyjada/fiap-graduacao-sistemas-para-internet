@@ -15,13 +15,13 @@
     />
 
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/heroHome.css" />
-    <link rel="stylesheet" href="./styles/mainDestination.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/gridCards.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
   </head>
 
   <body>
-    <section id="Hero">
+    <section id="Hero" style="background-image: url(./assets/heroHomeBg.png);">
       <header class="header">
         <div class="container">
           <svg
@@ -88,7 +88,7 @@
             guia turístico no seu destino preferido</span
           >
         </div>
-        <button>Ver Destinos</button>
+        <button class="buttonHero">Ver Destinos</button>
       </div>
       <div class="scrollto">
         <svg
@@ -110,15 +110,15 @@
       </div>
     </section>
 
-    <section id="MainDestinations" class="mainDestinations container">
-      <header class="mainDestinationsHeader">
+    <section id="MainDestinations" class="cardsContainer container">
+      <header class="cardsContainerheader">
         <div class="textContainer">
-          <span class="mainDestinations"> Em alta </span>
-          <h2 class="">Principais Destinos</h2>
+          <span class="topic"> Em alta </span>
+          <h2 class="cardsContainerTitle">Principais Destinos</h2>
         </div>
 
         <div class="filters">
-          <button class="selected">todos</button>
+          <button class="selected">Todos</button>
           <button class="default">Norte</button>
           <button class="default">Nordeste</button>
           <button class="default">Sudeste</button>
@@ -127,7 +127,7 @@
         </div>
       </header>
 
-      <ul id="MainDestinationsList" class="mainDestinationsList">
+      <ul id="MainDestinationsList" class="cardsList">
         <!-- Aqui será renderizada uma lista de cidades -->
       </ul>
     </section>
@@ -167,6 +167,6 @@
         </div>
       </div>
     </footer>
-    <script src="./scriptsHome.js"></script>
+    <script src="./scripts/scriptsHome.js"></script>
   </body>
 </html>

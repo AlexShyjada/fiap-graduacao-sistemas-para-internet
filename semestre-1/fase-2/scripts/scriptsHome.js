@@ -6,7 +6,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const cityListArray = [
     minimumCost: "R$ 10.000,00",
     availability: "Disponível",
     url: "./sao-paulo.html",
-    imageURL: "./assets/sao-paulo.png",
+    imageURL: "./assets/cidades/sao-paulo.png",
   },
 ];
 
@@ -81,18 +81,18 @@ function renderOffers(cityList) {
   const citysHtml = cityList
     .map(
       (city) => `
-        <a href="${city.url}" class="mainDestinationCard" style="background-image: url(${city.imageURL});">
+        <a href="${city.url}" class="card" style="background-image: url(${city.imageURL});">
             <div class="localeHeader">
                 <span class="cityRegion">${city.availability}</span>
             </div>
-            <div class="cityInformationContainer">
-              <div class="locale">
-                <span class="cityRegion">${city.cityRegion}</span>
-                <h3 class="cityName">${city.cityName}</h3>
+            <div class="informationContainer">
+              <div class="leftCollum">
+                <span class="leftCollumTopic">${city.cityRegion}</span>
+                <h3 class="name">${city.cityName}</h3>
               </div>
 
-              <div class="cost">
-                <span class="costLabel">Custo mínimo</span>
+              <div class="rightCollum">
+                <span class="rightCollumTopic">Custo mínimo</span>
                 <span class="costAmount">${city.minimumCost}</span>
               </div>
             </div>
