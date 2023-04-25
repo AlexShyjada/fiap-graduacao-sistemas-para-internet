@@ -1,99 +1,84 @@
-const cityListArray = [
+const holtelListArray = [
   {
     id: 1,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
+    name: "IBIS Styles São Paulo Anhembi",
     availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    url: "./sao-paulo.html",
+    imageURL: "./assets/hoteis/ibis.png",
   },
   {
     id: 2,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
-    availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    name: "Confort Ibirapuera",
+    availability: "Indisponível",
+    url: "#",
+    imageURL: "./assets/hoteis/confort.png",
   },
   {
     id: 3,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
-    availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    name: "Blue Tree Premium Morumbi",
+    availability: "Indisponível",
+    url: "#",
+    imageURL: "./assets/hoteis/blue_tree.png",
   },
   {
     id: 4,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
-    availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    name: "Mercure São Paulo Pamplona",
+    availability: "Indisponível",
+    url: "#",
+    imageURL: "./assets/hoteis/pamplona.png",
   },
   {
     id: 5,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
-    availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    name: "Sheraton São Paulo WTC Hotel",
+    availability: "Indisponível",
+    url: "#",
+    imageURL: "./assets/hoteis/sheraton.png",
   },
   {
     id: 6,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
-    availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    name: "Bourbon Convention Ibirapuera",
+    availability: "Indisponível",
+    url: "#",
+    imageURL: "./assets/hoteis/bourbon.png",
   },
   {
     id: 7,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
-    availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    name: "Golden Tulip Paulista Plaza",
+    availability: "Indisponível",
+    url: "#",
+    imageURL: "./assets/hoteis/golden_tulip.png",
   },
   {
     id: 8,
-    cityName: "São Paulo",
-    cityRegion: "Sudeste",
-    minimumCost: "R$ 10.000,00",
-    availability: "Disponível",
-    url: "./sao-paulo",
-    imageURL: "./assets/sao-paulo.png",
+    name: "Renaissance São Paulo Hotel",
+    availability: "Indisponível",
+    url: "#",
+    imageURL: "./assets/hoteis/renaissance.png",
   },
 ];
 
-function renderOffers(cityList) {
-  const gridCitysPositionOnDom = document.querySelector(
-    "#MainDestinationsList"
+function renderHoltel(hotelList) {
+  const gridHoltelsPositionOnDom = document.querySelector(
+    ".cardsList"
   );
 
-  const citysHtml = cityList
+  const citysHtml = hotelList
     .map(
-      (city) => `
-        <a href="${city.url}" class="mainDestinationCard" style="background-image: url(${city.imageURL});">
+      (hotel) => `
+        <a href="${hotel.url}" class="card ${
+          hotel.availability === "Disponível" ? "disponivel" : "indisponivel"
+      }" style="background-image: url(${hotel.imageURL});">
             <div class="localeHeader">
-                <span class="cityRegion">${city.availability}</span>
+              <span class="tag ${
+                hotel.availability === "Disponível" ? "green" : "red"
+              }">
+                ${hotel.availability}
+              </span>
             </div>
-            <div class="cityInformationContainer">
-              <div class="locale">
-                <span class="cityRegion">${city.cityRegion}</span>
-                <h3 class="cityName">${city.cityName}</h3>
-              </div>
-
-              <div class="cost">
-                <span class="costLabel">Custo mínimo</span>
-                <span class="costAmount">${city.minimumCost}</span>
+            <div class="informationContainer">
+              <div class="leftCollum">
+                <span class="leftCollumTopic">Hotel</span>
+                <h3 class="name">${hotel.name}</h3>
               </div>
             </div>
         </a>
@@ -101,7 +86,7 @@ function renderOffers(cityList) {
     )
     .join("");
 
-  gridCitysPositionOnDom.innerHTML = citysHtml;
+  gridHoltelsPositionOnDom.innerHTML = citysHtml;
 }
 
-renderOffers(cityListArray);
+renderHoltel(holtelListArray);

@@ -65,6 +65,25 @@
   border: 2px solid #030E0A;
 }
 
+@media (max-width: 1000px) {
+  .cardsContainerheader {
+    width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .filters {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
 
 /*====== MainDestinationsList =====*/
 
@@ -84,6 +103,9 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .card.indisponivel {
@@ -146,4 +168,22 @@
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+
+@media (max-width: 1280px) {
+  .cardsList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 920px) {
+  .cardsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .cardsList {
+    grid-template-columns: 1fr;
+  }
 }
