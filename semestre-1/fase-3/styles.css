@@ -1,0 +1,94 @@
+:root {
+  --bs-primary: #6740BF;
+  --bs-primary-rgb: rgba(103, 64, 191, 1);
+
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.containerCostumizado {
+  width: 100%;
+  max-width: 1224px;
+}
+
+#Inicio {
+  height: 560px;
+  background-image: url(./assets/hero-bg.png);
+  background-position: 50% 25%;
+}
+
+#Header {
+  width: 100%;
+}
+
+.linksContainer {
+  flex-grow: 0;
+}
+
+.navCustomizada {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1.5px);
+}
+
+.listContainer{
+  display: flex;
+  gap: 16px;
+}
+
+.navLink {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--bs-white);
+  font-weight: 500;
+}
+
+.navLink.active {
+  color: var(--bs-black);
+  background: var(--bs-white);
+}
+
+.mainTitle {
+  font-weight: 700;
+  color: var(--bs-white);
+}
+
+.emptyContent {
+  height: 79px;
+}
+
+.btnLogin, .btnCadastreSe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btnLogin {
+  color: var(--bs-black);
+  background: var(--bs-white);
+}
+
+.btnLogin:hover {
+  filter: brightness(0.9);
+
+}
+
+.btnCadastreSe {
+  color: var(--bs-white);
+  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 0.1);
+  border: solid 1px var(--bs-white);
+}
