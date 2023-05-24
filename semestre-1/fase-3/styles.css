@@ -8,6 +8,8 @@
   font-family: 'Inter', sans-serif;
 }
 
+/* ==== Hero ==== */
+
 .containerCostumizado {
   width: 100%;
   max-width: 1224px;
@@ -19,48 +21,14 @@
   background-position: 50% 25%;
 }
 
-#Header {
-  width: 100%;
+@media (max-width: 980px) {
+  #Inicio {
+    height: 700px;
+  }
 }
 
-.linksContainer {
-  flex-grow: 0;
-}
-
-.navCustomizada {
-  padding: 14px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(1.5px);
-}
-
-.listContainer{
-  display: flex;
-  gap: 16px;
-}
-
-.navLink {
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 999px;
-  color: var(--bs-white);
-  font-weight: 500;
-}
-
-.navLink.active {
-  color: var(--bs-black);
-  background: var(--bs-white);
-}
-
-.mainTitle {
-  font-weight: 700;
-  color: var(--bs-white);
-}
-
-.emptyContent {
-  height: 79px;
-}
-
-.btnLogin, .btnCadastreSe {
+.btnLogin,
+.btnCadastreSe {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,4 +59,96 @@
   backdrop-filter: blur(2px);
   background: rgba(255, 255, 255, 0.1);
   border: solid 1px var(--bs-white);
+}
+
+/* ==== Hero > Header ==== */
+
+#Header {
+  height: fit-content;
+  width: 100%;
+  position: absolute;
+  inset: 0 0 0 0;
+}
+
+@media (max-width: 980px) {
+  #Header {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+  }
+}
+
+.linksContainer {
+  flex-grow: 0;
+}
+
+.navCustomizada {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1.5px);
+}
+
+.listContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navLink {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--bs-white);
+  font-weight: 500;
+}
+
+.navLink.active {
+  color: var(--bs-black);
+  background: var(--bs-white);
+}
+
+/* ==== Hero > Main Content ==== */
+
+.mainContent {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.mainTitle {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  text-align: center;
+  color: var(--bs-white);
+}
+
+.mainSubtitle {
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--bs-white);
+}
+
+.emptyContent {
+  height: 79px;
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    max-width: 540px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .mainTitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .mainSubtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
