@@ -296,3 +296,49 @@ form {
     opacity: 1;
   }
 }
+
+/* ==== Footer ==== */
+
+.bodyFooter {
+	background: #DEDCD3;
+}
+
+.footerContainer {
+	width: 100%;
+	max-width: 1348px;
+	margin: 0 auto;
+}
+
+.footerSubtitle {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.footerLinksList {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.footerLink {
+	color: var(--bs-dark);
+}
+
+.footerLink::after {
+	content: url(./ArrowLineUpRight.svg);
+	margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+	.bodyFooter {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 576px) {
+	.bodyFooter {
+		font-size: 12px;
+	}
+}
