@@ -8,6 +8,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  background: var(--bs-gray-100);
+}
+
 /* ==== Hero ==== */
 
 .containerCostumizado {
@@ -146,9 +150,149 @@
     font-size: 32px;
     line-height: 40px;
   }
-  
+
   .mainSubtitle {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+/* ==== Form ==== */
+
+.legend{
+  display: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+
+  grid-area: legend;
+  font-size: 24px;
+  line-height: 32px;
+  color: #6740BF;
+
+}
+.destiny {
+  grid-area: destiny;
+}
+
+.people {
+  grid-area: people;
+}
+
+.checkInDate {
+  grid-area: checkInDate;
+}
+
+.checkoutDate {
+  grid-area: checkoutDate;
+}
+
+.btnSearch {
+  grid-area: btnSearch;
+}
+
+
+form {
+  background: var(--bs-white);
+  padding: 4px;
+  border-radius: 8px;
+  margin: -28px auto 48px auto;
+  display: grid;
+  grid-template-areas: "destiny people checkInDate checkoutDate btnSearch";
+  grid-template-columns: 1fr 1fr 1fr 1fr 108px;
+  gap: 8px;
+  box-shadow: 0px 4px 4px rgba(26, 0, 85, 0.1);
+}
+
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.inputGroup label {
+  display: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.inputGroup svg {
+  position: absolute;
+  margin-left: 12px;
+}
+
+.inputGroup input,
+.inputGroup select {
+  height: 48px;
+  padding: 0 0 0 46px;
+  background: var(--bs-gray-100);
+  width: 100%;
+  border-radius: 4px;
+  border: solid 1px var(--bs-gray-200);
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus {
+  border: solid 1px var(--bs-primary);
+}
+
+.inputGroup input::placeholder,
+.inputGroup select::placeholder {
+  color: var(--bs-black);
+}
+
+.btnSearch {
+  height: 48px;
+  border: none;
+  border-radius: 4px;
+  background: var(--bs-primary);
+  color: var(--bs-white);
+  font-weight: 500;
+  transition: 0.3;
+}
+
+.btnSearch:hover {
+  filter: brightness(0.9);
+}
+
+.btnSearch:focus {
+  border: solid 1px var(--bs-white);
+}
+
+@media (max-width: 1240px) {
+  form.containerCostumizado {
+    width: 98%;
+  }
+}
+
+@media (max-width: 920px) {
+  form {
+    padding: 16px;
+    grid-template-areas: "legend legend" "destiny people" "checkInDate checkoutDate" "btnSearch btnSearch";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legend{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 420px) {
+  form {
+    padding: 16px;
+    grid-template-areas: "legend" "destiny" "people" "checkInDate" "checkoutDate" "btnSearch";
+    grid-template-columns: 1fr;
+  }
+
+  .legend{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    opacity: 1;
   }
 }

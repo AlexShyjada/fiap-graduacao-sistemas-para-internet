@@ -50,12 +50,35 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 16H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5 8H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M5 24H27" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 16H27"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5 8H27"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5 24H27"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
               </svg>
-              
             </button>
 
             <div
@@ -103,6 +126,208 @@
         </div>
       </div>
     </section>
-    
+    <form class="containerCostumizado">
+
+      <legend class="legend">Onde deseja se hospedar?</legend>
+      
+      <div class="inputGroup destiny">
+        <label for="data">Destino</label>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <select value="default" name="Número" id="Numero" placeholder="Pessoas">
+          <option value="Cidades" disabled selected>Destino</option>
+          <option value="Aracajú, SE">Aracajú, SE</option>
+          <option value="Belém, PA">Belém, PA</option>
+          <option value="Belo Horizonte, MG">Belo Horizonte, MG</option>
+          <option value="Boa Vista, RR">Boa Vista, RR</option>
+          <option value="Brasília, DF">Brasília, DF</option>
+          <option value="Campo Grande, MS">Campo Grande, MS</option>
+          <option value="Cuiabá, MT">Cuiabá, MT</option>
+          <option value="Curitiba, PR">Curitiba, PR</option>
+          <option value="Florianópolis, SC">Florianópolis, SC</option>
+          <option value="Fortaleza, CE">Fortaleza, CE</option>
+          <option value="Goiânia, GO">Goiânia, GO</option>
+          <option value="João Pessoa, PA">João Pessoa, PA</option>
+          <option value="Maceio, AL">Maceio, AL</option>
+          <option value="Macapá, AP">Macapá, AP</option>
+          <option value="Manaus, AM">Manaus, AM</option>
+          <option value="Natal, RN">Natal, RN</option>
+          <option value="Palmas, TO">Palmas, TO</option>
+          <option value="Porto Alegre, RS">Porto Alegre, RS</option>
+          <option value="Porto Velho, RO">Porto Velho, RO</option>
+          <option value="Recife, PE">Recife, PE</option>
+          <option value="Rio Branco, AC">Rio Branco, AC</option>
+          <option value="Rio de Janeiro, RJ">Rio de Janeiro, RJ</option>
+          <option value="Salvador, BA">Salvador, BA</option>
+          <option value="São Luíz, MA">São Luíz, MA</option>
+          <option value="São Paulo, SP">São Paulo, SP</option>
+          <option value="Teresina, PI">Teresina, PI</option>
+          <option value="Vitória, ES">Vitória, ES</option>
+        </select>
+      </div>
+
+      <div class="inputGroup people">
+        <label for="data">Pessoas</label>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.25 15C10.9424 15 13.125 12.8174 13.125 10.125C13.125 7.43261 10.9424 5.25 8.25 5.25C5.55761 5.25 3.375 7.43261 3.375 10.125C3.375 12.8174 5.55761 15 8.25 15Z"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+          />
+          <path
+            d="M14.5684 5.42813C14.9993 5.31124 15.4437 5.25136 15.8902 5.25C17.1832 5.25 18.4231 5.76361 19.3374 6.67785C20.2516 7.59209 20.7652 8.83207 20.7652 10.125C20.7652 11.4179 20.2516 12.6579 19.3374 13.5721C18.4231 14.4864 17.1832 15 15.8902 15"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M1.5 18.5062C2.2612 17.423 3.27191 16.5389 4.44676 15.9286C5.6216 15.3183 6.92608 14.9997 8.25 14.9997C9.57392 14.9997 10.8784 15.3183 12.0532 15.9286C13.2281 16.5389 14.2388 17.423 15 18.5062"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.8906 15C17.2147 14.9992 18.5194 15.3174 19.6944 15.9277C20.8693 16.5381 21.8799 17.4225 22.6406 18.5063"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <select value="default" name="Número" id="Numero" placeholder="Pessoas">
+          <option value="default" disabled selected>Pessoas</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+
+      <div class="inputGroup checkInDate">
+        <label>Data de Entrada</label>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.5 2.25V5.25"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.5 2.25V5.25"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M3.75 8.25H20.25"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <input
+          type="text"
+          placeholder="Data de Entrada"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+        />
+      </div>
+
+      <div class="inputGroup checkoutDate">
+        <label>Data de Saída</label>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.5 3.75H4.5C4.08579 3.75 3.75 4.08579 3.75 4.5V19.5C3.75 19.9142 4.08579 20.25 4.5 20.25H19.5C19.9142 20.25 20.25 19.9142 20.25 19.5V4.5C20.25 4.08579 19.9142 3.75 19.5 3.75Z"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.5 2.25V5.25"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.5 2.25V5.25"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M3.75 8.25H20.25"
+            stroke="#212121"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <input
+          type="text"
+          placeholder="Data de Entrada"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+        />
+      </div>
+
+      <button class="btnSearch" type="">Pesquisar</button>
+    </form>
   </body>
 </html>
