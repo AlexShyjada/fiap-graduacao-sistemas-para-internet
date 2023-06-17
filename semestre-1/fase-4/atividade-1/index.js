@@ -82,7 +82,7 @@ const roteiros = [
 function renderRoteiros(roteiros) {
   const roteirosPositionOnDom = document.querySelector(".roteirosList");
 
-  const offersHtml = roteiros
+  const roteirosHtml = roteiros
     .map((roteiro) => `
       <b>->1 - Roteiros para *${roteiro.city}*</b>
       <br />
@@ -99,7 +99,7 @@ function renderRoteiros(roteiros) {
     `)
     .join("");
 
-    roteirosPositionOnDom.innerHTML = offersHtml;
+    roteirosPositionOnDom.innerHTML = roteirosHtml;
 }
 
 renderRoteiros(roteiros);
